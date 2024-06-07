@@ -1,0 +1,54 @@
+.projects {
+  margin-top: 10px;
+}
+
+.projects h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.project-list {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project-item {
+  background: #444;
+  color: white;
+  width: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2px;
+}
+
+.projectTitle {
+  font-style: italic;
+}
+
+@media (max-width: 1200px) and (min-width: 800px) {
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project-item {
+    height: auto;
+  }
+}
